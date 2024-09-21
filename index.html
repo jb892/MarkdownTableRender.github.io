@@ -1,0 +1,43 @@
+<!--
+ * @Author: Ju Bo
+ * @Date: 2024-09-21 22:30:22
+ * @LastEditTime: 2024-09-21 23:16:28
+ * @LastEditors: Ju Bo
+ * @Description: 
+ * @FilePath: /1_create_pretty_table_website/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Table Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown Table Renderer</h1>
+        <textarea id="markdownInput" rows="10" placeholder="Enter your markdown table here..."></textarea>
+        <div class="controls">
+            <select id="themeSelector">
+                <option value="default">Default Green</option>
+                <option value="blue">Ocean Blue</option>
+                <option value="red">Ruby Red</option>
+                <option value="purple">Royal Purple</option>
+                <option value="orange">Sunset Orange</option>
+                <option value="teal">Teal Breeze</option>
+                <option value="pink">Rosy Pink</option>
+                <option value="brown">Earthy Brown</option>
+                <option value="gray">Sleek Gray</option>
+                <option value="yellow">Sunny Yellow</option>
+            </select>
+            <button id="convertBtn">Render</button>
+        </div>
+        <div id="tableOutput"></div>
+        <button id="downloadBtn" style="display: none;">Download PNG</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
